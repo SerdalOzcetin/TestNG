@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/asus/IdeaProjects/testNGProject/src/test/java/techproed/tests/Day19_TestNGAnnotations.java">
+        <classes>
+            <class name="techproed.tests.Day19_TestNGAnnotations">
+                <methods>
+                    <!-- exclude: hariç tum method ları çalıştır demektır-->
+                    <!-- include: sadece bu method ları çalıştır demektır-->
+
+                    <include name="test07"/>
+                    <include name="test02"/>
+                    <include name="test04"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
