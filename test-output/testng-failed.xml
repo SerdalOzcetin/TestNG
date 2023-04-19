@@ -3,9 +3,9 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="C:/Users/asus/IdeaProjects/testNGProject/src/test/java/techproed/tests/smoketests(failed)">
     <classes>
-      <class name="techproed.tests.smoketests.Day22_PositiveLoginTest">
+      <class name="techproed.tests.smoketests.Day22_NegativeLoginTest">
         <methods>
-          <include name="US100201_Admin_Login"/>
+          <include name="US100208_Negative_Login"/>
         </methods>
       </class> <!-- techproed.tests.smoketests.Day22_PositiveLoginTest -->
     </classes>
