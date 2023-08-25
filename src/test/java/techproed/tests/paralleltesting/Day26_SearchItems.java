@@ -6,6 +6,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
 import java.time.Duration;
@@ -13,7 +14,7 @@ import java.time.Duration;
 public class Day26_SearchItems {
     @Test
     public void googleSEarch(){
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().driverVersion("116.0.5845.96").setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -26,7 +27,8 @@ public class Day26_SearchItems {
 
     @Test
     public void amazonSearch(){
-        WebDriverManager.chromedriver().setup();
+        /*
+        WebDriverManager.chromedriver().driverVersion("116.0.5845.96").setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -35,5 +37,14 @@ public class Day26_SearchItems {
         System.out.println("Amazon Title :" +driver.getTitle());
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("porcelain teapot" + Keys.ENTER);
         driver.quit();
+
+         */
+
+        Driver.getDriver().get("https://www.amazon.com");
+        ReusableMethods.waitFor(3);
+        System.out.println("Amazon Title :" +Driver.getDriver().getTitle());
+        Driver.getDriver().findElement(By.id("twotabsearchtextbox")).sendKeys("porcelain teapot" + Keys.ENTER);
+        Driver.getDriver().quit();
+
     }
 }
