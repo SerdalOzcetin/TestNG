@@ -1,6 +1,6 @@
 package techproed.tests.paralleltesting;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -12,8 +12,10 @@ import techproed.utilities.ReusableMethods;
 import java.time.Duration;
 
 public class Day26_SearchItems {
-    @Test
+    @Test(priority = 0)
     public void googleSEarch(){
+        /*
+
         WebDriverManager.chromedriver().driverVersion("116.0.5845.96").setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -23,9 +25,17 @@ public class Day26_SearchItems {
         System.out.println("Google Title :"+ driver.getTitle());
         driver.findElement(By.name("q")).sendKeys("porcelain teapot" + Keys.ENTER);
         driver.quit();
+
+         */
+        Driver.getDriver().get("https://www.google.com");
+        ReusableMethods.waitFor(3);
+        System.out.println("Google Title :"+ Driver.getDriver().getTitle());
+        Driver.getDriver().findElement(By.name("q")).sendKeys("porcelain teapot" + Keys.ENTER);
+        // Driver.getDriver().close(); bu şekilde kullanıldığında diğer @test deki driverin çalışması engelleniyor.
+        Driver.closeDriver(); // şeklinde kullanınca sorun olmuyor.
     }
 
-    @Test
+    @Test(priority = 1)
     public void amazonSearch(){
         /*
         WebDriverManager.chromedriver().driverVersion("116.0.5845.96").setup();

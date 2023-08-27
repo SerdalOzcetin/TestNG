@@ -1,6 +1,6 @@
 package techproed.tests.paralleltesting;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,6 +33,8 @@ public class Day26_AmazonTest {
         boolean isDisplayed = Driver.getDriver().findElement(By.xpath("//input[@id='continue']")).isDisplayed();
         Assert.assertTrue(isDisplayed);
         Driver.getDriver().quit();
+
+
 
         }
 
