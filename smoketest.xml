@@ -4,8 +4,8 @@
         <packages>
             <!-- klasorun ısmı root tan ıtıbaren alınmalalı
             kaydetmeyı unutma -->
-            <package name="techproed.tests.smoketests"></package>
-            <package name="techproed.tests.dataprovider"></package>
+            <package name="myProject.tests.smoketests"></package>
+            <package name="myProject.tests.dataprovider"></package>
         </packages>
     </test>
 </suite>

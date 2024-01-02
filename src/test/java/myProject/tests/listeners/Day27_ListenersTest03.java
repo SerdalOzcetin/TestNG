@@ -1,0 +1,37 @@
+package myProject.tests.listeners;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.SkipException;
+import org.testng.annotations.Test;
+import myProject.utilities.Driver;
+
+public class Day27_ListenersTest03 {
+
+    @Test(retryAnalyzer = myProject.utilities.ListenersRetry.class)
+    public void test01(){
+        System.out.println("PASS");
+        Assert.assertTrue(true);
+
+    }
+
+    @Test(retryAnalyzer = myProject.utilities.ListenersRetry.class)
+    public void test02(){
+        System.out.println("FAILED");
+        Assert.assertTrue(false);
+    }
+
+    @Test(retryAnalyzer = myProject.utilities.ListenersRetry.class)
+    public void test03(){
+        System.out.println("SKIPPED");
+        throw new SkipException("Metotu atla");
+    }
+
+    @Test(retryAnalyzer = myProject.utilities.ListenersRetry.class)
+    public void test04(){
+        System.out.println("EXCEPTION");
+        Driver.getDriver().get("https://www.amazon.com");
+        Driver.getDriver().findElement(By.xpath("fdcdc"));
+        // throw new NoSuchElementException("No SuchElementException");
+    }
+}

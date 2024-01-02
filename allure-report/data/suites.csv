@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jan 02 20:08:41 TRT 2024","Tue Jan 02 20:08:45 TRT 2024","3282","Default Suite","TestNG","myProject.tests.DAy_20_Driver_Config_Test","myProject.tests.DAy_20_Driver_Config_Test","firstTest","firstTest","Something for description..."

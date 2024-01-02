@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="C:/Users/asus/IdeaProjects/testNGProject/src/test/java/techproed/tests/Day19_TestNGAnnotations.java">
+          name="C:/Users/asus/IdeaProjects/testNGProject/src/test/java/myProject/tests/Day19_TestNGAnnotations.java">
         <classes>
-            <class name="techproed.tests.Day19_TestNGAnnotations">
+            <class name="myProject.tests.Day19_TestNGAnnotations">
                 <methods>
                     <include name="beforeSuite"/>
                     <include name="test07"/>

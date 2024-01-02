@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="techproed.utilities.ListenersRetryAnalyzer"></listener>
+        <listener class-name="myProject.utilities.ListenersRetryAnalyzer"></listener>
     </listeners>
     <test verbose="2" preserve-order="true"
-          name="C:/Users/asus/IdeaProjects/testNGProject/src/test/java/techproed/tests/listeners/Day27_ListenersTest04.java">
+          name="C:/Users/asus/IdeaProjects/testNGProject/src/test/java/myProject/tests/listeners/Day27_ListenersTest04.java">
         <classes>
-            <class name="techproed.tests.listeners.Day27_ListenersTest04">
+            <class name="myProject.tests.listeners.Day27_ListenersTest04">
                 <methods>
                     <include name="test01"/>
                     <include name="test02"/>

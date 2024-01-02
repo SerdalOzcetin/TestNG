@@ -9,6 +9,6 @@
     </test>
     <!-- Tum projedekı klasorleri ara ve  "regression-tests"  isimli @Test caselerş çalıştır.-->
     <packages>
-        <package name="techproed.*"></package>
+        <package name="myProject.*"></package>
     </packages>
 </suite>

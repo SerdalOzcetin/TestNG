@@ -3,13 +3,13 @@
 <suite name="Suite1" verbose="1" >
     <test name="Positive LoginTest" >
         <classes>
-            <class name="techproed.tests.smoketests.Day22_PositiveLoginTest" />
+            <class name="myProject.tests.smoketests.Day22_PositiveLoginTest" />
         </classes>
     </test>
 
     <test name="Negative LoginTest">
         <classes>
-            <class name="techproed.tests.smoketests.Day22_NegativeLoginTest"/>
+            <class name="myProject.tests.smoketests.Day22_NegativeLoginTest"/>
         </classes>
     </test>
 </suite>

@@ -2,11 +2,11 @@
 
 <suite name="minor regression" verbose="1" >
     <listeners>
-        <listener class-name="techproed.utilities.ListenersRetryAnalyzer"></listener>
+        <listener class-name="myProject.utilities.ListenersRetryAnalyzer"></listener>
     </listeners>
     <test name="Regression1"   >
         <packages>
-            <package name="techproed.*" />
+            <package name="myProject.*" />
         </packages>
     </test>
 </suite>
